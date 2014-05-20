@@ -34,6 +34,7 @@ namespace LinqAndEntityFramework.ConsoleApp
 
             Product first = products.First(p => p.Id == 10);
 
+            Console.WriteLine("Product: " + first.Name + "Category: " + first.Category.Name);
             Console.Read();
         }
     }
